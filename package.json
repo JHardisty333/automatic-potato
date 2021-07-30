@@ -1,0 +1,31 @@
+{
+  "name": "automatic-potato",
+  "version": "1.0.0",
+  "description": "Project two - The Campfire",
+  "main": "server.js",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.1.2",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHardisty333/automatic-potato.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JHardisty333/automatic-potato/issues"
+  },
+  "homepage": "https://github.com/JHardisty333/automatic-potato#readme"
+}
