@@ -23,5 +23,5 @@ CREATE TABLE contact (
 CREATE TABLE bell_ringer (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
-    story VARCHAR(30) NOT NULL
+    story VARCHAR(200) NOT NULL
 );
