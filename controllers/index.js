@@ -7,4 +7,4 @@ const teacherRoutes = require('./teacher-routes.js');
 // router.use('/student', studentRoutes);
 router.use('/', teacherRoutes);
 
-
+module.exports = router;
