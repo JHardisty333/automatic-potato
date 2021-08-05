@@ -1,7 +1,6 @@
 const bcrypt = require('bcrypt');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const { update } = require('./Newsfeed');
 
 // create our User model
 class User extends Model {}

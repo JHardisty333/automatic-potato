@@ -71,3 +71,49 @@ router.post('/login', (req, res) => {
     res.json({ user: dbUserData, message: 'You are now logged in!' });
   });
 });
+
+// PUT /api/users/1
+router.put('/:id', (req, res) => {
+    // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+  
+    // if req.body has exact key/value pairs to match the model, you can just use `req.body` instead
+    User.update(req.body, {
+      individualHooks: true,
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbUserData => {
+        if (!dbUserData[0]) {
+          res.status(404).json({ message: 'No user found with this id' });
+          return;
+        }
+        res.json(dbUserData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+// DELETE /api/users/1
+router.delete('/:id', (req, res) => {
+    User.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(dbUserData => {
+        if (!dbUserData) {
+          res.status(404).json({ message: 'No user found with this id' });
+          return;
+        }
+        res.json(dbUserData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
+
+module.exports = router;
