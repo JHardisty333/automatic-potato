@@ -1,3 +1,4 @@
+const router = require('express').Router();
 
 const newsfeedRoutes = require('./newsfeed-routes.js');
 const userRoutes = require('./user-routes.js');
