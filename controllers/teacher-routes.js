@@ -1,21 +1,20 @@
-// const express = require('express');
-// const router = express.Router();
-// const db = require('../config/connection');
+const express = require('express');
+const router = require('express').Router();
+const db = require('../config/connection');
 
-// const router = require('express').Router();
 
-// router.get('/', (req, res) => {
-//     res.render('homepage', {
-//       id: 1,
-//       post_url: 'https://handlebarsjs.com/guide/',
-//       title: 'Handlebars Docs',
-//       created_at: new Date(),
-//       vote_count: 10,
-//       comments: [{}, {}],
-//       user: {
-//         username: 'test_user'
-//       }
-//     });
-//   });
+router.get('/', (req, res) => {
+    res.render('homepage', {
+      id: 1,
+      post_url: 'https://handlebarsjs.com/guide/',
+      title: 'Handlebars Docs',
+      created_at: new Date(),
+      vote_count: 10,
+      comments: [{}, {}],
+      user: {
+        username: 'test_user'
+      }
+    });
+  });
 
-// module.exports = router;
+module.exports = router;
