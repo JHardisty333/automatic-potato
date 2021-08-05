@@ -40,6 +40,7 @@ Similar to a social media app
 
 Joshua- database, get, post (module 11, 12 13)
 What is user name and password.
+
 Jessica- Front end, HTML , CSS handlebars( module 14)
 
 Michael- links from landing page to second page, structure (module 11)
