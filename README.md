@@ -1,36 +1,29 @@
 # automatic-potato
 ## Project two - The Campfire
 
-### Slogan (gather around the campfire)
+### Slogan "Gather around the campfire"
 
-#### Isn’t about time
+#### Scope
 The google app criteria – integrates with Google Classroom
 Similar to a social media app
-
-#### Teacher
- - Be able to moderate posts
- - Send out a link or some type of invitation
- - Control when the APP is open
- - Only the students in the classroom can get in
-
-#### Student
- - Be able to accept invite to chat room
- - Communicate to everyone in the group
 
 #### Bonus
  - Communicate over voice, or chat
  - Able to add a picture (drag and drop)
- - Needs a classroom
  - Post section (like a blog) like canvas
  - Can see announcements
  - View grades or upcoming assignments (node.js)
  - Separate link to chatroom (like our zoom link for class)
+ - Separate access for both students and teachers
 
 #### Design
  - Needs a login page
  - Login form (card) handlebars
  - Express for styling
  - Logout button
+ - Homepage has a calendar, contact section, Newsfeed
+ - Posting and commenting
+ - Logout page
 
 #### File structure
  - .gitignore
@@ -39,7 +32,6 @@ Similar to a social media app
 
 
 Joshua- database, get, post (module 11, 12 13)
-What is user name and password.
 
 Jessica- Front end, HTML , CSS handlebars( module 14)
 
@@ -53,5 +45,8 @@ Michael- links from landing page to second page, structure (module 11)
 
 ### Logout
 ![Logout](https://user-images.githubusercontent.com/82549162/127951716-1e61bc1b-8eef-439e-bd3d-57235c0fa323.png)
+
+### Homepage
+![Homepage](https://user-images.githubusercontent.com/82549162/128582839-02885744-b222-4aaa-abb4-c1cbb8bc637c.png)
 
 
