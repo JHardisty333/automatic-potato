@@ -23,7 +23,7 @@ User.hasMany(Newsupdate, {
 });
 
 Newsfeed.hasMany(Newsupdate, {
-    foreignKey: 'newsfed_id'
+    foreignKey: 'newsfeed_id'
 });
 
 
