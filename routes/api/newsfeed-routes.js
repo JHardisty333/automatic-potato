@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Newsfeed, User } = require('../../models');
+const { Newsfeed, User, Newsupdate } = require("../../models");
 
 // GET /api/calendar
 router.get('/', (req, res) => {
@@ -7,6 +7,14 @@ router.get('/', (req, res) => {
         attributes: ['id', 'newsfeed_url', 'message', 'name'],
         order: [['name', 'DESC']],
         include: [
+            {
+                model: Newsupdate,
+                attributes: ['id', 'newsupdat_text', 'newsfeed_id', 'user_id'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+            },
             {
                 model: User,
                 attributes: ['username']
