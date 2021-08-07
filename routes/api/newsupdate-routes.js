@@ -1,4 +1,4 @@
-const router = requrie ('express').Router();
+const router = require('express').Router();
 const { Newsupdate } = require('../../models');
 
 router.get('/', (req, res) => {
@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     Newsupdate.create({
-        newupdate_text: req.body.newupdate_text,
+        newsupdate_text: req.body.newsupdate_text,
         user_id: req.body.user_id,
         newsfeed_id: req.body.newsfeed_id
     })
