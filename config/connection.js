@@ -1,5 +1,3 @@
-const { Sequelize } = require("sequelize/types");
-
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
