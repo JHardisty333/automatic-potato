@@ -1,17 +1,17 @@
 <ol class="post-list">
+  {{#each posts as |post| }}
   <li>
     <article class="post">
       <div class="title">
-        <a href="{{post_url}}" target="_blank">{{title}}</a>
-        <span>({{post_url}})</span>
+        <a href="{{post.newsfeed_url}}" target="_blank">{{post.name}}</a>
+        <span>({{post.newsfeed_url}})</span>
       </div>
       <div class="meta">
-        {{vote_count}} point(s) by {{user.username}} on
-        {{created_at}}
-        |
-        <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+        {{post.message}} point(s) by {{post.user.username}} 
+
+        <a href="/post/{{newsfeed.id}}">{{post.newsupdates.length}} comment(s)</a>
       </div>
     </article>
   </li>
-  {{!-- {{/each}} --}}
+  {{/each}}
 </ol
