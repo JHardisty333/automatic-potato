@@ -5,6 +5,8 @@ const { Newsfeed, User } = require('../models');
 
 
 router.get('/', (req, res) => {
+  console.log(req.session);
+
     Newsfeed.findAll({
       attributes: [
         'id',
@@ -31,7 +33,16 @@ router.get('/', (req, res) => {
   });
 
   router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
+  
     res.render('login');
   });
+
+  router.get('/', (req, res) => {
+    console.log(req.session);
+  })
 
 module.exports = router;

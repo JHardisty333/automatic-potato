@@ -6,5 +6,9 @@ const userRoutes = require('./user-routes.js');
 router.use('/newsfeed', newsfeedRoutes);
 router.use('/users', userRoutes);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> coder
 module.exports = router;
 
