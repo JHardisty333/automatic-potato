@@ -1,10 +1,13 @@
 const router = require('express').Router();
-
-// const studentRoutes = require('./student-routes.js');
 const teacherRoutes = require('./teacher-routes.js');
 
+const apiRoutes = require('./api');
 
-// router.use('/student', studentRoutes);
+router.use('/api', apiRoutes);
 router.use('/', teacherRoutes);
+
+router.use((req, res) => {
+    res.status(404).end();
+});
 
 module.exports = router;
