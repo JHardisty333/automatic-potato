@@ -1,20 +1,12 @@
 const router = require('express').Router();
-const { Newsfeed, User, Newsupdate } = require("../../models");
+const { Newsfeed, User } = require("../../models");
 
 // GET /api/calendar
 router.get('/', (req, res) => {
     Newsfeed.findAll({
-        attributes: ['id', 'newsfeed_url', 'message', 'name'],
-        order: [['name', 'DESC']],
+        attributes: ['id', 'newsfeed_url', 'message', 'name', 'created_at'],
+        order: [['created_at', 'DESC']],
         include: [
-            {
-                model: Newsupdate,
-                attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id'],
-                include: {
-                    model: User,
-                    attributes: ['username']
-                }
-            },
             {
                 model: User,
                 attributes: ['username']
@@ -33,7 +25,7 @@ router.get('/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'newsfeed_url', 'message', 'name'],
+        attributes: ['id', 'newsfeed_url', 'message', 'name', 'created_at'],
         include: [
             {
                 model: User,
@@ -71,7 +63,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Newsfeed.update(
         {
-            name: req.body.name,
+            newsfeed_url: req.body.newsfeed_url
         },
         {
             where: {

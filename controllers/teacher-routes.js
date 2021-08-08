@@ -1,7 +1,7 @@
 // const express = require('express');
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Newsfeed, User, Newsupdate } = require('../models');
+const { Newsfeed, User } = require('../models');
 
 
 router.get('/', (req, res) => {
@@ -13,14 +13,6 @@ router.get('/', (req, res) => {
         'message'
       ],
       include: [
-        {
-          model: Newsupdate,
-          attributes: ['id', 'newsupdate_text', 'newsfeed_id'],
-          include: {
-            model: User,
-            attributes: ['username']
-          }
-        },
         {
           model: User,
           attributes: ['username']
