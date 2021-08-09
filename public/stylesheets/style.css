@@ -64,8 +64,8 @@ main {
     background-image: url("../assets/images/Logbox-background.png"); 
     background-size: cover;
     background-position: center;
-    width: 60%;
-    margin: 5% 25% 9%;
+    width: 100%;
+    margin: 25%;
     box-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
     border-radius: 15px;
 }
@@ -111,13 +111,17 @@ main {
     line-height: 2;
 }
 
-.login-form button, .signup-form button {
+.login-form button, .signup-form button, .login-form a {
     color: #fff7e7;
     background-color: #fc9b4a;
     border: none;
     padding: 8px 15px;
     font-size: 16px;
     border-radius: 10px;
+}
+
+.login-form a {
+    text-decoration: none;
 }
 
 .form-input {
