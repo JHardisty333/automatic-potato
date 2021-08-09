@@ -1,27 +1,4 @@
+DROP DATABASE IF EXISTS automatic_potato;
 
-CREATE TABLE calendar (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    type VARCHAR(30) NOT NULL,
-    book VARCHAR(30) NULL,
-    page INTEGER NULL,
-    date DATE NOT NULL,
-    time TIME NOT NULL
-);
+CREATE DATABASE automatic_potato;
 
-CREATE TABLE newsfeed (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NOT NULL,
-    message VARCHAR(200) NOT NULL
-);
-
-CREATE TABLE contact (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NOT NULL,
-    email VARCHAR(30) NOT NULL
-);
-
-CREATE TABLE bell_ringer (
-    id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NOT NULL,
-    story VARCHAR(200) NOT NULL
-);

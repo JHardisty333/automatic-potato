@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<link>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Campfire</title>
@@ -12,22 +12,60 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/">Automatic_potato</a>
+        <a href="/">The Campfire</a>
       </h1>
-      <nav>
-        <button id="logout" class="btn-no-style">logout</button>
-      <a href="/login">login</a>
-      </nav>
     </header>
     <main>
-      {{{ body }}}
+       {{{ body }}}
+       <section class="login"> 
+        <div class="login-box">
+            <div>
+              <h3> 
+                Welcome!
+                <p>Gather Round The Campfire</p>
+                </h3>
+              <form class="login-form">
+                <h4>Login</h4>
+                  <div>
+                    <label for="email-login">Email:</label>
+                    <input type="text" placeholder="Email Address" id="email-login" class= "form-input"/>
+                  </div>
+                  <div>
+                    <label for="password-login">Password:</label>
+                    <input type="password" placeholder="Password" id="password-login" class= "form-input"/>
+                  </div>
+                  <div>
+                    <button type="submit">Login</button>
+                  </div>
+                </form>
+
+                <form class="signup-form">
+                  <h4>Sign Up</h4>
+                    <div>
+                      <label for="username-signup">Username:</label>
+                      <input type="text" placeholder="Username" id="username-signup" class= "form-input"/>
+                    </div>
+                    <div>
+                      <label for="email-signup">Email:</label>
+                      <input type="text" placeholder="Email Address" id="email-signup" class= "form-input"/>
+                    </div>
+                    <div>
+                        <label for="password-signup">Password:</label>
+                        <input type="password" placeholder="Password" id="password-signup" class= "form-input"/>
+                    </div>
+                    <div>
+                      <button type="submit">Signup</button>
+                    </div>
+                </form>
+          </div>
+        </section>
     </main>
     <footer>
-      Thanks for visiting!
+      Made with love by Mistyped Devbelopers  🔥
     </footer>
   </div>
 
-<script src="/javascript/logout.js"></script>
+  <script src="/javascript/logout.js"></script>
 </body>
 
 </html>
