@@ -10,6 +10,27 @@ Newsupdate.init(
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
+        },
+        newsupdate_text: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [1]
+            }
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            reference: {
+                model: 'user',
+                kdy: 'id'
+            }
+        },
+        newsfeed_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'newsfeed',
+                key: 'id'
+            }
         }
     },
     {
