@@ -64,8 +64,8 @@ main {
     background-image: url("../assets/images/Logbox-background.png"); 
     background-size: cover;
     background-position: center;
-    width: 50%;
-    margin: 5% 30% 9%;
+    width: 60%;
+    margin: 5% 25% 9%;
     box-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
     border-radius: 15px;
 }
@@ -87,25 +87,55 @@ main {
     font-size: 20px;
 }
 
+.login-form h4, .signup-form h4 {
+    font-size: 18px;
+    line-height: 2;
+}
+
 .login-box form {
     border: 3px solid #79553e;
     background-color: rgba(255, 247, 231, 0.781);
-    padding: 30px;
+    color: #79553e;
+    font-size: 15px;
+    padding: 3% 10%;
     text-align: center;
-    width: 40%; 
-    margin: 3.5% 30%;
+    width: 65%; 
+    margin: 3.5% 17%;
     border-color: #79553e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
 
-.login-box form a {
-    color: #79553e;
-    text-decoration: none;
-    font-weight: bold;
+.login-form h4, .signup-form h4 {
+    font-size: 18px;
+    line-height: 2;
 }
 
+.login-form button, .signup-form button {
+    color: #fff7e7;
+    background-color: #fc9b4a;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
 
+.form-input {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
 
 /* Footer Style Starts */
 footer {
