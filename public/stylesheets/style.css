@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --primary-color: #fc9b4a;
+    --secondary-color: #fff7e7;
+    --tertiary-color: #79553e;
 }
 
 body {
@@ -34,6 +34,7 @@ header {
 }
 
 header h1 a { 
+    text-decoration: none;
     font-weight: bold;
     margin: 0;
     font-size: 32px;
@@ -54,53 +55,66 @@ main {
     background-position: 80%;
 }
 
-section {
-    padding: 60px;
+.login {
+    padding: 50px;
 }
 
 .login-box {
-    background-image: url("../assets/images/Logbox-background.png");
+    border :3px solid #79553e;
+    background-image: url("../assets/images/Logbox-background.png"); 
     background-size: cover;
     background-position: center;
-    text-align: center;
-    margin: 10%;
-    color: #fff7e7;
-    font-size: 18px;
-    line-height: 1.2;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
     width: 50%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 5% 30% 9%;
+    box-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
     border-radius: 15px;
 }
 
 .login-box h3 {    
-    font-size: 30px;
+    border :3px solid #79553e;
+    background-color: #fff7e7;
+    padding: 30px;
+    text-align: center;
+    margin: 8% 12%;
+    font-size: 28px;
     color: #79553e;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
+    box-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
+    border-radius: 15px;
+}
+
+.login-box h3 p {
+    font-size: 20px;
 }
 
 .login-box form {
     border: 3px solid #79553e;
     background-color: rgba(255, 247, 231, 0.781);
-    padding: 40px;
-    color: #79553e;
+    padding: 30px;
+    text-align: center;
     width: 40%; 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 3.5%;
+    margin: 3.5% 30%;
+    border-color: #79553e;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
+
+.login-box form a {
+    color: #79553e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 
 /* Footer Style Starts */
 footer {
     background-color: #fff7e7;
-    color: #79553e
+    color: #79553e;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 /*Footer Style Ends */
