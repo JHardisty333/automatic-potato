@@ -1,7 +1,7 @@
 // const express = require('express');
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Newsfeed, User } = require('../models');
+const { Newsfeed, User, Newsupdate } = require('../models');
 
 
 router.get('/', (req, res) => {
