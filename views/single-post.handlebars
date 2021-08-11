@@ -1,0 +1,12 @@
+<article class="post">
+  <div class="title">
+    <a href="{{post.newsfeed_url}}" target="_blank">{{post.name}}</a>
+    <span>({{post.newsfeed_url}})</span>
+  </div>
+  <div class="meta">
+    by {{post.user.username}} on
+    {{post.created_at}}
+    |
+    <a href="/post/{{newsfeed.id}}">{{post.newsupdate_text.length}} comment(s)</a>
+  </div>
+</article>
