@@ -22,7 +22,7 @@ Newsupdate.init(
             type: DataTypes.INTEGER,
             reference: {
                 model: 'user',
-                kdy: 'id'
+                key: 'id'
             }
         },
         newsfeed_id: {

@@ -6,8 +6,10 @@ const sequelize = require('../config/connection');
 const seedStore = async () => {
     await sequelize.sync({ force: true });
     console.log('----------');
+    
     await seedUsers();
     console.log('---------');
+    
     await seedNewsfeed();
     console.log('---------');
 

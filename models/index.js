@@ -7,19 +7,23 @@ User.hasMany(Newsfeed, {
 });
 
 Newsfeed.belongsTo(User, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    onDelete: 'SET NULL'
 });
 
 Newsupdate.belongsTo(User, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    onDelete: 'SET NULL'
 });
 
 Newsupdate.belongsTo(Newsfeed, {
-    foreignKey: 'newsfeed_id'
+    foreignKey: 'newsfeed_id',
+    onDelete: 'SET NULL'
 });
 
 User.hasMany(Newsupdate, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    onDelete: 'SET NULL'
 });
 
 Newsfeed.hasMany(Newsupdate, {
