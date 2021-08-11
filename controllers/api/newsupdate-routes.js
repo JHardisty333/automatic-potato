@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
     Newsupdate.create({
         newsupdate_text: req.body.newsupdate_text,
         user_id: req.body.user_id,
-        newsfeed_id: req.body.newsfeed_id,
+        newsfeed_id: req.body.newsfeed_id
     })
         .then(dbNewsupdateData => res.json(dbNewsupdateData))
         .catch(err => {
