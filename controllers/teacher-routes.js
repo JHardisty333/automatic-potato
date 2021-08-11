@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
       include: [
         {
           model: Newsupdate,
-          attributes: ['id', 'name', 'message', 'newfeed_id', 'user_id', 'created_at'],
+          attributes: ['id', 'newsupdate_text', 'user_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']
