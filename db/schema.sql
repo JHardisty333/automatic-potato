@@ -1,3 +1,20 @@
-DROP DATABASE IF EXISTS automatic_potato;
+CREATE TABLE user (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
 
-CREATE DATABASE automatic_potato;
+CREATE TABLE newsfeed (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    message VARCHAR(255) NOT NULL,
+    newsfeed_url VARCHAR(255) NOT NULL,
+    user_id INTEGER NOT NULL
+);
+
+CREATE TABLE newsupdate (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    newsupdate_text VARCHAR(255) NOT NULL,
+    user_id INTEGER NOT NULL
+);
