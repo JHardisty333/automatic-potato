@@ -1,4 +1,3 @@
-const 
 const { Newsfeed } = require('../models');
 
 const newsfeedinfo = [

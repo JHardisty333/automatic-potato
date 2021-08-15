@@ -52,23 +52,9 @@ router.get('/', (req, res) => {
 
   router.get('/', (req, res) => {
     console.log(req.session);
-  })
+  });
 
-  // router.get('/post/:id', (req, res) => {
-  //   const post = {
-  //     id: 1,
-  //     newsfeed_url: 'https://google.com/',
-  //     name: 'Handlebars Docs',
-  //     created_at: new Date(),
-  //     comments: [{}, {}],
-  //     user: {
-  //       username: 'test_user'
-  //     }
-  //   };
   
-  //   res.render('single-post', { post });
-  // });
-
   // router.get('/post/:id', (req, res) => {
     // Newsfeed.findOne({
       // where: {
