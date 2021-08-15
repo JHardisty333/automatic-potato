@@ -1,4 +1,4 @@
-const { Model, Datatypes, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Newsupdate extends Model {}
@@ -22,7 +22,7 @@ Newsupdate.init(
             type: DataTypes.INTEGER,
             reference: {
                 model: 'user',
-                kdy: 'id'
+                key: 'id'
             }
         },
         newsfeed_id: {
