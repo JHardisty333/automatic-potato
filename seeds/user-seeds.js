@@ -51,6 +51,11 @@ const userInfo = [
         username: 'Firedragon',
         email: 'Charzardflys24@gmail.com',
         password: 'Megaevolve45'
+    },
+    {
+        username: 'Waterrocks',
+        email: 'Hydra1@gmail.com',
+        password: 'Waterspout12!'
     }
 ];
 
