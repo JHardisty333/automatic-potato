@@ -41,6 +41,55 @@ header h1 a {
     color: #FC9B4A;
     text-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
 }
+
+header nav {
+    margin: 4px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    color:#fff7e7;
+}
+
+header nav ul li a {
+    padding: 15px 20px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
+    text-decoration: none;
+}
+
+.button {
+    padding: 15px 20px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
+    text-decoration: none;
+    border-radius: 15px;
+    border-color: none;
+}
+
+header nav ul li a:hover {
+    background: #fc9b4a;
+    color: #79553e;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.button:hover {
+    background: #fc9b4a;
+    color: #79553e;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 /* End Header section */
 
 main {
