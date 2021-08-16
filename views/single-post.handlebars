@@ -4,9 +4,34 @@
     <span>({{post.newsfeed_url}})</span>
   </div>
   <div class="meta">
-    by {{post.user.username}} on
+   {{post.message}} by {{post.user.username}} on
     {{post.created_at}}
     |
-    <a href="/post/{{newsfeed.id}}">{{post.newsupdate_text.length}} comment(s)</a>
+    <a href="/post/{{post.id}}">{{post.newsupdate_text.length}} comment(s)</a>
   </div>
 </article>
+
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+
+<div class="comments">
+  {{#each post.comments}}
+  <section class="comment">
+    <div class="meta">
+      {{user.username}} on {{created_at}}
+    </div>
+    <div>
+      <div class="text">
+        {{newsupdate_text}}
+      </div>
+    </div>
+  </section>
+  {{/each}}
+</div>
