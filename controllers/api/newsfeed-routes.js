@@ -1,9 +1,10 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Newsfeed, User, Newsupdate } = require("../../models");
+const { Newsfeed, User, Newsupdate } = require('../../models');
 
 // GET /api/calendar
 router.get('/', (req, res) => {
+    console.log('==================');
     Newsfeed.findAll({
         attributes: ['id', 'newsfeed_url', 'message', 'name', 'created_at'],
         order: [['created_at', 'DESC']],

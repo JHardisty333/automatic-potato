@@ -1,4 +1,4 @@
-const sequelize = require('../config/connection')
+const sequelize = require('../config/connection');
 const { User, Newsfeed } = require('../models');
 
 const userInfo = [
@@ -41,6 +41,21 @@ const userInfo = [
         username: 'RogueOne',
         email: 'Foiledplans23@gmail.com',
         password: 'Diplomaticmission180'
+    },
+    {
+        username: 'Grassleafeon',
+        email: 'Leaguechamp23@gmail.com',
+        password: "Pokemonfanatic1"
+    },
+    {
+        username: 'Firedragon',
+        email: 'Charzardflys24@gmail.com',
+        password: 'Megaevolve45'
+    },
+    {
+        username: 'Waterrocks',
+        email: 'Hydra1@gmail.com',
+        password: 'Waterspout12!'
     }
 ];
 
