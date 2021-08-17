@@ -228,8 +228,11 @@ textarea:focus, input:focus {
     color: #7d7d7d;
 }
 
-.ttite {
+.title {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .post-list {
