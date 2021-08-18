@@ -4,20 +4,19 @@ const { Newsfeed, User, Newsupdate } = require('../models');
 
 
 router.get('/', (req, res) => {
-  console.log(req.session);
+  console.log('==============');
 
     Newsfeed.findAll({
       attributes: [
         'id',
         'newsfeed_url',
         'name',
-        'message',
-        'created_at'
+        'message'
       ],
       include: [
         {
           model: Newsupdate,
-          attributes: ['id', 'newsupdate_text', 'user_id', 'created_at'],
+          attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id',],
           include: {
             model: User,
             attributes: ['username']
@@ -38,7 +37,7 @@ router.get('/', (req, res) => {
       .catch(err => {
         console.log(err);
         res.status(500).json(err);
-      })
+      });
   });
 
   router.get('/login', (req, res) => {
@@ -52,23 +51,9 @@ router.get('/', (req, res) => {
 
   router.get('/', (req, res) => {
     console.log(req.session);
-  })
+  });
 
-  // router.get('/post/:id', (req, res) => {
-  //   const post = {
-  //     id: 1,
-  //     newsfeed_url: 'https://google.com/',
-  //     name: 'Handlebars Docs',
-  //     created_at: new Date(),
-  //     comments: [{}, {}],
-  //     user: {
-  //       username: 'test_user'
-  //     }
-  //   };
   
-  //   res.render('single-post', { post });
-  // });
-
   // router.get('/post/:id', (req, res) => {
     // Newsfeed.findOne({
       // where: {

@@ -1,16 +1,17 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Newsfeed, User, Newsupdate } = require("../../models");
+const { Newsfeed, User, Newsupdate } = require('../../models');
 
 // GET /api/calendar
 router.get('/', (req, res) => {
+    console.log('==================');
     Newsfeed.findAll({
-        attributes: ['id', 'newsfeed_url', 'message', 'name', 'created_at'],
-        order: [['created_at', 'DESC']],
+        attributes: ['id', 'newsfeed_url', 'message', 'name'],
+        // order: [['DESC']],
         include: [
             {
                 model: Newsupdate,
-                attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id', 'created_at'],
+                attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id'],
                 include:{
                     model: User,
                     attributes: ['username']
@@ -34,11 +35,11 @@ router.get('/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'newsfeed_url', 'message', 'name', 'created_at'],
+        attributes: ['id', 'newsfeed_url', 'message', 'name'],
         include: [
             {
                 model: Newsupdate,
-                attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id', 'created_at'],
+                attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id'],
                 include: {
                     model: User,
                     attributes: ['username']
