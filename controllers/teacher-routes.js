@@ -11,13 +11,12 @@ router.get('/', (req, res) => {
         'id',
         'newsfeed_url',
         'name',
-        'message',
-        'created_at'
+        'message'
       ],
       include: [
         {
           model: Newsupdate,
-          attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id', 'created_at'],
+          attributes: ['id', 'newsupdate_text', 'newsfeed_id', 'user_id',],
           include: {
             model: User,
             attributes: ['username']
