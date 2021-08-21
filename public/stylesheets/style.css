@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: #fc9b4a;
-    --secondary-color: #fff7e7;
-    --tertiary-color: #79553e;
-}
-
 body {
     color: #fff7e7;
     font-family: Helvetica, Arial, sans-serif;
@@ -55,10 +49,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color:#fff7e7;
-}
-
-header nav ul li a {
+    color: #fff7e7;
     padding: 15px 20px;
     font-weight: lighter;
     font-size: 1.5vw;
@@ -66,15 +57,17 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.button {
+button {
+    background: none;
+    border: none;
+    color:#fff7e7;
     padding: 15px 20px;
     font-weight: lighter;
     font-size: 1.5vw;
     text-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
     text-decoration: none;
     border-radius: 15px;
-    border-color: none;
-}
+} 
 
 header nav ul li a:hover {
     background: #fc9b4a;
@@ -83,7 +76,7 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-.button:hover {
+button:hover {
     background: #fc9b4a;
     color: #79553e;
     border-radius: 15px;
@@ -132,7 +125,9 @@ textarea:focus, input:focus {
 }
 
 .login {
+    margin: 5% 20%;
     padding: 1%;
+    width: 800px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -144,7 +139,7 @@ textarea:focus, input:focus {
     border :3px solid #79553e;
     background-image: url("../assets/images/Logbox-background.png"); 
     background-size: cover;
-    background-position: center;
+    background-position: fixed;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
