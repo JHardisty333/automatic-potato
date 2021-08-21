@@ -127,7 +127,7 @@ textarea:focus, input:focus {
 .login {
     margin: 5% 20%;
     padding: 1%;
-    width: 800px;
+    /* width: 800px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -153,7 +153,7 @@ textarea:focus, input:focus {
 .login-box h3 {    
     border :3px solid #79553e;
     background-color: #fff7e7;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
     margin: 8% 12%;
     font-size: 28px;
