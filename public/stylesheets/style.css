@@ -5,7 +5,6 @@
 }
 
 body {
-    color: #fff7e7;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -48,7 +47,7 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav ul li a, button {
     color: #fff7e7;
     padding: 15px 20px;
     font-weight: lighter;
@@ -60,31 +59,34 @@ header nav ul li a {
 button {
     background: none;
     border: none;
-    color:#fff7e7;
+    /* color:#fff7e7;
     padding: 15px 20px;
     font-weight: lighter;
     font-size: 1.5vw;
     text-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
-    text-decoration: none;
+    text-decoration: none; */
     border-radius: 15px;
 } 
 
-header nav ul li a:hover {
+header nav ul li a:hover, button:hover {
     background: #fc9b4a;
     color: #79553e;
     border-radius: 15px;
     text-shadow: none;
 }
 
-button:hover {
+/* button:hover {
     background: #fc9b4a;
     color: #79553e;
     border-radius: 15px;
     text-shadow: none;
     border-color: none;
-}
+} */
 
 /* End Header section */
+
+
+/* Gather Greeting Section */
 
 main {
     background-size: cover;
@@ -94,25 +96,10 @@ main {
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
-    background-position: 80%
+    background-position: 80%;
+    padding: 40px;
 }
 
-textarea {
-    min-width: 40%;
-    min-height: 100px;
-}
-
-textarea, input {
-    padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-  
-textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
-}
-  
 .background {
     background-image: url("../assets/images/Landing-image1.jpg");
     background-size: cover;
@@ -208,6 +195,27 @@ textarea:focus, input:focus {
     border-color: none;
 }
 
+/* End Greeting and signin cards */
+
+
+/* Homepage */
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+textarea, input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+} 
+
 .form-input {
     border: 1px solid #79553e;
     display: block;
@@ -277,6 +285,8 @@ textarea:focus, input:focus {
     margin-bottom: .5%;
     opacity: .6;
 }
+/* End Homepage */
+
 
 /* Footer Style Starts */
 footer {
