@@ -11,9 +11,10 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+    if (req.session) {
     Newsupdate.create({
         newsupdate_text: req.body.newsupdate_text,
-        user_id: req.body.user_id,
+        user_id: req.session.user_id,
         newsfeed_id: req.body.newsfeed_id
     })
         .then(dbNewsupdateData => res.json(dbNewsupdateData))
@@ -21,6 +22,7 @@ router.post('/', (req, res) => {
             console.log(err);
             res.status(400).json(err);
         });
+    }
 });
 
 router.delete('/:id', (req, res) => {

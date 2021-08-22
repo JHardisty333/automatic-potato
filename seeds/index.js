@@ -8,10 +8,10 @@ const seedAll = async () => {
     await sequelize.sync({ force: true });
     console.log('----------');
     
-    await seedUsers.sync();
+    await seedUsers();
     console.log('---------');
     
-    await seedNewsfeed.sync();
+    await seedNewsfeed();
     console.log('---------');
 
     await seedNewsupdate();

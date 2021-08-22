@@ -1,4 +1,4 @@
-const User = require("./User");
+const User = require("./user");
 const Newsfeed = require("./Newsfeed");
 const Newsupdate = require("./Newsupdate");
 
