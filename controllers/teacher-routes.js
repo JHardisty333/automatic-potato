@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
     .then(dbNewsfeedData => {
       console.log(dbNewsfeedData[0]);
       const posts = dbNewsfeedData.map(post => post.get({ plain: true }));
-        
+
       res.render('homepage', { posts });
     })
     .catch(err => {
@@ -45,13 +45,17 @@ router.get('/login', (req, res) => {
     res.redirect('/');
     return;
   }
-  
+
   res.render('login');
 });
 
+router.get('/', (req, res) => {
+ console.log(req.session);
+});
+
 // router.get('/', (req, res) => {
-//  console.log(req.session);
-// });
+//   res.render("homepage")
+// })
 
 router.get('/post/:id', (req, res) => {
   Newsfeed.findOne({
@@ -80,23 +84,23 @@ router.get('/post/:id', (req, res) => {
       }
     ]
   })
-  .then(dbNewsfeedData => {
-    if (!dbNewsfeedData) {
-      res.status(400).json({ message: 'no newsfeed found with this id' });
-      return;
-    }
+    .then(dbNewsfeedData => {
+      if (!dbNewsfeedData) {
+        res.status(400).json({ message: 'no newsfeed found with this id' });
+        return;
+      }
 
-    const post = dbNewsfeedData.get({ plain: true });
+      const post = dbNewsfeedData.get({ plain: true });
 
-    res.render('single-post', { post });
-  })
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+      res.render('single-post', { post });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 
-  
+
 
 module.exports = router;
