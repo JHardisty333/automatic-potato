@@ -1,7 +1,8 @@
-# automatic-potato
-## Project two - The Campfire
+# Title
+Project two - The Campfire
 
-### Slogan "Gather around the campfire"
+# Application Description
+
 
 #### Scope
 The google app criteria – integrates with Google Classroom
