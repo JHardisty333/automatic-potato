@@ -2,7 +2,7 @@
 Project two - The Campfire
 
 # Application Description
-
+Teachers have the responsibililty to teach multiple groups of kids each year. To communicate with their students and share online materials for schoolwork they use online portals such as canvas to post the materials for each class period. Our application makes it so teachers can post materials for all of their students in one location instead of having to post in different locations. Teachers have the ability with this application to also leave a message underneath their post so that students can tell which class period the post is for. This application makes it faster for them to post materials which will give them more time for planning lessons. Having more time to plan lessons and make improvements will increase a teachers overall effectiveness in the classroom. Future reworking of the code will allow students to leave comments so that the teachers can get feeback on the material they assigned to the student.
 
 #### Scope
 The google app criteria – integrates with Google Classroom
