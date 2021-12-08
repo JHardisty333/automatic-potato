@@ -8,9 +8,5 @@ router.use('/newsupdate', newsupdateRoutes);
 router.use('/newsfeed', newsfeedRoutes);
 router.use('/users', userRoutes);
 
-<<<<<<< HEAD
-=======
-
->>>>>>> coder
 module.exports = router;
 
