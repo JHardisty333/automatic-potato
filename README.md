@@ -11,7 +11,16 @@ The backend side of the application was organized with a database named automati
 Frontend: 
 We organized the front end by using handlebars for our html code. The handlbars we had for this application are our landing page, login page, and comment page. Our landing page is where a user will see all the articles and resources that have been posted to the application. Underneath the link to the articles or resource the users will see text that describes what the article or resource is about and has a link that leads the user to a page where they can leave comments on the article or resource that was posted. All of the posts are inside a single container. A navigation bar is at the top of the landing page with links that allow the user to login to the application or logout of the application. The login is setup with a container that has cards for the user to login or signup. The login card asks the user for their email and password. The signup card ask the user for their email, username, and password they will use for the application. Both the login and signup cards are inside a conatiner as well. Each of our pages has the background image of people gathered around a campfire because of the idea of having the resorces posted in one place where students and teachers can interact through the comments. Our styling was done with using a CSS stylesheet had been prepared before the backend side of the application was completed.
 
-# 
+# Running the Application
+The first thing that needs to be done to run our application is to double check and make sure all the necessary software is downloaded onto your computer. The software that needs to be downloaded if necessary, is Visual Studio Code, Node.js, Insomnia, and Gitbash. The links to download all the software will be listed below.
+- <a href="https://code.visualstudio.com/docs/setup/setup-overview">Visual Studio Code Download</a>
+- <a href="https://git-scm.com/downloads">Gitbash Download</a>
+- <a href="https://nodejs.org/en/">Node.js Download For Windows</a>
+- <a href="https://nodejs.org/en/">Node.js Download For Mac</a>
+- <a href="https://insomnia.rest/">Insomnia Downlad</a>
+
+Next the code needs to be cloned onto visual studio code 
+
 
 #### Scope
 The google app criteria – integrates with Google Classroom
