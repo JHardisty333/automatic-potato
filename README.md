@@ -19,7 +19,12 @@ The first thing that needs to be done to run our application is to double check 
 - <a href="https://nodejs.org/en/">Node.js Download For Mac</a>
 - <a href="https://insomnia.rest/">Insomnia Downlad</a>
 
-Next the code needs to be cloned onto visual studio code 
+Next the code needs to be cloned onto visual studio code. The code for this application can be found at our group repository. The link for the repository can be found below
+- <a href="https://github.com/JHardisty333/automatic-potato">Repository Link</a>
+Click the green code button at the top right corner of the repository to get the shareable link needed to clone the repository into visual studio code. Chose the https code option and then double click on the right side of the mouse after typing git clone into the visual studio code terminal. This will import all of the code onto your computer. If you are not able to use the git clone command due to restrictions put on the repository when the project was created you can open each folder and see the lines of code/and file structure you use in your own repository. Use the same command to put your own repository onto your computer after creating it in github.
+
+After getting the repository onto your computer you will need to install packages from the node.js library to prevent errors when loading the application for the first time. The packages that you will need to install are 
+
 
 
 #### Scope
