@@ -12,11 +12,11 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     if (req.session) {
-    Newsupdate.create({
-        newsupdate_text: req.body.newsupdate_text,
-        user_id: req.session.user_id,
-        newsfeed_id: req.body.newsfeed_id
-    })
+        Newsupdate.create({
+            newsupdate_text: req.body.newsupdate_text,
+            user_id: req.session.user_id,
+            newsfeed_id: req.body.newsfeed_id
+        })
         .then(dbNewsupdateData => res.json(dbNewsupdateData))
         .catch(err => {
             console.log(err);

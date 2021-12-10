@@ -8,6 +8,5 @@ router.use('/newsupdate', newsupdateRoutes);
 router.use('/newsfeed', newsfeedRoutes);
 router.use('/users', userRoutes);
 
-
 module.exports = router;
 

@@ -9,13 +9,13 @@ const seedAll = async () => {
     console.log('----------');
     
     await seedUsers();
-    console.log('---------');
+    console.log('Users seeded');
     
     await seedNewsfeed();
-    console.log('---------');
+    console.log('Newsfeed seeded');
 
     await seedNewsupdate();
-    console.log('---------');
+    console.log('Newsupdate seeded');
 
     process.exit(0);
 };
