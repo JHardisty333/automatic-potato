@@ -1,7 +1,12 @@
 # Title
 Project two - The Campfire
 
-
+# Table of Contents
+- [Application Description](#application-description)
+- [Application Organization](#application-description)
+- [Running The Application](#running-the-application)
+- [Link to Deployed Application](#linkt-to-deployed-application)
+- [Screenshot of Application](#screenshot-of-application)
 
 # Application Description
 Teachers have the responsibililty to teach multiple groups of kids each year. To communicate with their students and share online materials for schoolwork they use online portals such as canvas to post the materials for each class period. Our application makes it so teachers can post materials for all of their students in one location instead of having to post in different locations. Teachers have the ability with this application to also leave a message underneath their post so that students can tell which class period the post is for. This application makes it faster for them to post materials which will give them more time for planning lessons. Having more time to plan lessons and make improvements will increase a teachers overall effectiveness in the classroom. Future reworking of the code will allow students to leave comments so that the teachers can get feeback on the material they assigned to the student.
@@ -33,7 +38,7 @@ Homepage:
 ![Homepage](https://user-images.githubusercontent.com/82549162/128582839-02885744-b222-4aaa-abb4-c1cbb8bc637c.png)
 
 
-# Running the Application
+# Running The Application
 The first thing that needs to be done to run our application is to double check and make sure all the necessary software is downloaded onto your computer. The software that needs to be downloaded if necessary, is Visual Studio Code, Node.js, Insomnia, and Gitbash. The links to download all the software will be listed below.
 - <a href="https://code.visualstudio.com/docs/setup/setup-overview">Visual Studio Code Download</a>
 - <a href="https://git-scm.com/downloads">Gitbash Download</a>
