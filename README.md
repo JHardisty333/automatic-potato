@@ -39,12 +39,13 @@ Homepage:
 
 
 # Running The Application
-The first thing that needs to be done to run our application is to double check and make sure all the necessary software is downloaded onto your computer. The software that needs to be downloaded if necessary, is Visual Studio Code, Node.js, Insomnia, and Gitbash. The links to download all the software will be listed below.
+The first thing that needs to be done to run our application is to double check and make sure all the necessary software is downloaded onto your computer. The software that needs to be downloaded if necessary, is Visual Studio Code, Node.js, Insomnia, Gitbash, and a internet browser like Google Chrome. The links to download all the software will be listed below.
 - <a href="https://code.visualstudio.com/docs/setup/setup-overview">Visual Studio Code Download</a>
 - <a href="https://git-scm.com/downloads">Gitbash Download</a>
 - <a href="https://nodejs.org/en/">Node.js Download For Windows</a>
 - <a href="https://nodejs.org/en/">Node.js Download For Mac</a>
 - <a href="https://insomnia.rest/">Insomnia Downlad</a>
+- <a href="https://www.google.com/chrome/">Google Chrome Download</a>
 
 Next the code needs to be cloned onto visual studio code. The code for this application can be found at our group repository. The link for the repository can be found below
 - <a href="https://github.com/JHardisty333/automatic-potato">Repository Link</a>
