@@ -3,9 +3,9 @@ Project two - The Campfire
 
 # Table of Contents
 - [Application Description](#application-description)
-- [Application Organization](#application-description)
+- [Application Organization](#application-organization)
 - [Running The Application](#running-the-application)
-- [Link to Deployed Application](#linkt-to-deployed-application)
+- [Link to Deployed Application](#link-to-deployed-application)
 - [Screenshot of Application](#screenshot-of-application)
 
 # Application Description
@@ -56,5 +56,5 @@ After getting the repository onto your computer you will need to install package
 <a href="https://automatic-potato.herokuapp.com">Link to Application</a>
 
 # Screenshot of Application
-<img src="../../public/assests/images/campfireshot.png" />
+<img src="../../public/assets/images/campfireshot.png" />
 
