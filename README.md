@@ -57,5 +57,5 @@ After getting the repository onto your computer you will need to install package
 <a href="https://automatic-potato.herokuapp.com">Link to Application</a>
 
 # Screenshot of Application
-<img src="../../public/assets/images/campfireshot.png" />
+<img src="./public/assets/images/campfireshot.png" />
 
